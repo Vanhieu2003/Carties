@@ -19,7 +19,7 @@ public class AuctionSvcHttpClient
     {
 var lastRecord = await DB.Find<Item>()
         .Sort(x => x.Descending(x => x.UpdatedAt))
-        .ExecuteFirstAsync();   // trả về Item hoặc null
+        .ExecuteFirstAsync();   
 
     // Nếu DB không có bản ghi
     if (lastRecord == null)
@@ -31,13 +31,12 @@ var lastRecord = await DB.Find<Item>()
         );
     }
 
-    // Lấy UpdatedAt
     var lastUpdated = lastRecord.UpdatedAt;
 
-    // Format chuẩn ISO cho query string
+    
     var iso = Uri.EscapeDataString(lastUpdated.ToUniversalTime().ToString("o"));
 
-    // Gọi API chỉ lấy các auction updated hơn
+    
     return await _httpClient.GetFromJsonAsync<List<Item>>(
         $"{_configuration["AuctionServiceUrl"]}/api/auctions?date={iso}"
     );

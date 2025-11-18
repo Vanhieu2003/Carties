@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "src\Aucti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService", "src\SearchService\SearchService.csproj", "{A9B5674A-DEB3-4A8B-B5B6-7C2D20395872}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\Contracts.csproj", "{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,18 @@ Global
 		{A9B5674A-DEB3-4A8B-B5B6-7C2D20395872}.Release|x64.Build.0 = Release|Any CPU
 		{A9B5674A-DEB3-4A8B-B5B6-7C2D20395872}.Release|x86.ActiveCfg = Release|Any CPU
 		{A9B5674A-DEB3-4A8B-B5B6-7C2D20395872}.Release|x86.Build.0 = Release|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Debug|x64.Build.0 = Debug|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Debug|x86.Build.0 = Debug|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Release|x64.ActiveCfg = Release|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Release|x64.Build.0 = Release|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Release|x86.ActiveCfg = Release|Any CPU
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +64,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A7D42F87-668C-4DD4-B90B-9DF533243C2C} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{A9B5674A-DEB3-4A8B-B5B6-7C2D20395872} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{D660F2F6-1EA8-4455-A87F-75C0E45A3CCB} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 EndGlobal

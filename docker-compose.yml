@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:18
+    image: postgres:16
     environment:
       POSTGRES_PASSWORD: 123456
     ports:
@@ -16,3 +16,10 @@ services:
       - "27017:27017"
     volumes:
       - /var/lib/mongodb/data
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - /var/lib/rabbitmq/data
